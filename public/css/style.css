@@ -1,0 +1,207 @@
+* {
+    font-family: "SUSE", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    padding: 0;
+    margin: 0;
+}
+
+nav {
+    display: flex; /* 1 */
+    justify-content: space-between; /* 2 */
+    padding: 1rem 2rem; /* 3 */
+    background: #FFDC7F; /* Changed to light yellow */
+}
+
+nav ul {
+    display: flex; /* 5 */
+    list-style: none; /* 6 */
+}
+
+nav li {
+    padding-left: 1rem; /* 7! */
+}
+
+nav a {
+    text-decoration: none;
+    color: #227B94; /* Changed to teal blue */
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #FFDC7F; /* Changed to light yellow */
+    color: #16325B; /* Changed text color to dark blue */
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.footer-links ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    margin: 10px 0;
+}
+
+.footer-links a {
+    color: #16325B; /* Changed to dark blue */
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: #FFDC7F; /* Change color on hover to light yellow */
+}
+
+.footer-newsletter {
+    margin: 20px 0;
+}
+
+.footer-newsletter form {
+    display: flex;
+    justify-content: center;
+}
+
+.footer-newsletter input[type="email"] {
+    padding: 10px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+}
+
+.footer-newsletter button {
+    padding: 10px;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    background-color: #227B94; /* Changed to teal blue */
+    color: #FFDC7F; /* Changed text color to light yellow */
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.footer-newsletter button:hover {
+    background-color: #16325B; /* Darken button color on hover */
+}
+
+.footer-social {
+    margin: 20px 0;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+}
+
+.social-icon {
+    margin: 0 10px;
+    color: #16325B; /* Changed to dark blue */
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.social-icon:hover {
+    color: #FFDC7F; /* Change color on hover to light yellow */
+}
+
+.footer-bottom {
+    margin-top: 20px;
+}
+
+.content {
+    padding: 40px;
+    text-align: center;
+    background-color: #FFDC7F; /* Changed to light yellow */
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    max-width: 800px;
+    position: relative; /* Voor de achtergrondafbeelding */
+    overflow: hidden; /* Om te zorgen dat de afbeelding niet buiten de grenzen komt */
+}
+
+.content:hover {
+    background-image: url('https://haitianinter.com/wp-content/uploads/sites/4/2020/04/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20200417142142.jpg'); /* Voeg je afbeelding hier toe */
+    background-size: cover; /* Zorg ervoor dat de afbeelding de hele ruimte bedekt */
+    background-position: center; /* Centreer de afbeelding */
+    color: #16325B; /* Maak de tekst donkerblauw bij hover voor betere leesbaarheid */
+    transition: color 0.3s ease; /* Voeg een overgangseffect toe voor kleurverandering */
+}
+
+.content h1 {
+    color: #227B94; /* Changed to teal blue */
+    z-index: 1; /* Zorg ervoor dat de tekst boven de achtergrondafbeelding ligt */
+}
+
+.content {
+    padding: 40px;
+    text-align: center;
+    background-color: #FFDC7F; /* Lichtgeel */
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    max-width: 800px;
+    position: relative; /* Voor de achtergrondafbeelding */
+    overflow: hidden; /* Om te zorgen dat de afbeelding niet buiten de grenzen komt */
+    transition: background-color 0.3s ease; /* Voor een soepele overgang */
+}
+
+.content:hover {
+    background-image: url('https://example.com/achtergrond.jpg'); /* Voeg hier je afbeelding toe */
+    background-size: cover; /* Zorg ervoor dat de afbeelding de hele ruimte bedekt */
+    background-position: center; /* Centreer de afbeelding */
+    color: #16325B; /* Maak de tekst donkerblauw bij hover voor betere leesbaarheid */
+}
+
+.content h1 {
+    color: #227B94; /* Teal blauw */
+    z-index: 1; /* Zorg ervoor dat de tekst boven de achtergrondafbeelding ligt */
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    max-width: 600px; /* Max breedte voor het formulier */
+    margin: 0 auto; /* Centreer het formulier */
+}
+
+.contact-form label {
+    margin: 10px 0 5px; /* Ruimte tussen label en invoerveld */
+    color: #16325B; /* Donkerblauw voor labels */
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 10px;
+    border: 1px solid #227B94; /* Teal blauw voor de rand */
+    border-radius: 5px;
+    margin-bottom: 15px; /* Ruimte tussen invoervelden */
+    font-size: 16px; /* Grotere tekstgrootte */
+}
+
+.contact-form button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #FFDC7F; /* Lichtgeel voor de knop */
+    color: #16325B; /* Donkerblauw voor de tekst op de knop */
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: #227B94; /* Teal blauw bij hover */
+    color: #FFDC7F; /* Lichtgeel tekstkleur bij hover */
+}
+
+
